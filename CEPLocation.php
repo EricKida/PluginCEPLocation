@@ -8,7 +8,8 @@
 */
 
 function CEPLocation(){
-	return '<h2>CEPLocation</h2>'
+	echo file_get_contents(plugins_url().'/CEPLocation/formCEP.php');
 }
 
-add_shortcode('cep_location','CEPLocation')
+// No shortcode no wordpress: [cep_location]
+add_shortcode('cep_location','CEPLocation');
